@@ -230,7 +230,7 @@ __Task 1:__ Find out what the application does when you log in
     User name, quantity of users online and the changeable balance
     - _See the storage tab of your browser's developer tools_
 - Is any data sent to external services?
-    The only user data that i could find that was sent is the amount of users online if a user is logged into the system
+    The only user data that i could find that was sent is the amount of users online if a user is logged into the system, actually now i found that user information are sent to TODO: Send customer info to all subservices.
     URL Da Solicitação:
 http://analytics.bank.ouspg.org.localhost:8080/
 Método De Solicitação:
@@ -255,6 +255,7 @@ __Task 2:__ Figure out which subdomain of the application is vulnerable to takeo
 - How can you find out the hosting provider after finding out the domain?
 
 ```
+
 
 
 ```
