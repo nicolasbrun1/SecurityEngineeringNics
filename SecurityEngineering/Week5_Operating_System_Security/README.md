@@ -37,11 +37,10 @@ Answer in max 300 words. You are free to use tables or otherwise make to compari
 Spectre variant 1 (Bounds Check Bypass): takes advantage of speculative execution that bypasses conditional branch instructions used for memory access bounds check. results in memory accesses to invalid memory (with out-of-bound index) that are done speculatively before validation checks resolve. Spectre variant 1 is not only about user-controlled array bounds checks. It can affect any conditional checks.
 
 Spectre variant 2 (Branch Target Injection): takes advantage of speculative execution of indirect branches. The indirect branch predictors inside the processor used to guess the target of indirect branches can be influenced by an attacker, causing gadget code to be speculatively executed, thus exposing sensitive data touched by the victim. The attacker can steer speculative indirect branches in the victim to gadget code by poisoning the branch target buffer of a CPU used for predicting indirect branch addresses.
-
-
 Processors affected by Spectre: Cortex-R7, Cortex-R8, Cortex-A8, Cortex-A9, Cortex-A15, Cortex-A17, Cortex-A57, Cortex-A72, Cortex-A73 and ARM Cortex-A75 cores.
+Meltdown Rogue Data Cache Load: The Meltdown technique can enable a user process to read kernel memory. Apply to all modern processors and affect nearly all computing devices and operating systems. All Mac systems and iOS devices are affected, but there are no known exploits impacting customers at the time of this writing. 
 
-Meltdown Rogue Data Cache Load: The Meltdown technique can enable a user process to read kernel memory. Apply to all modern processors and affect nearly all computing devices and operating systems. All Mac systems and iOS devices are affected, but there are no known exploits impacting customers at the time of this writing. Since exploiting many of these issues requires a malicious app to be loaded on your Mac or iOS device, we recommend downloading software only from trusted sources such as the App Store.
+
 ---
 
 ### Task3: Securing OS
